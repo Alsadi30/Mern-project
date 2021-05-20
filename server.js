@@ -40,7 +40,7 @@ const PORT = process.env.PORT || 4000
 
 app.listen(PORT,()=>{
     console.log(`SERVER IS RUNNING ON PORT ${PORT}`),
-    mongoose.connect(`mongodb+srv://${process.env.dbUsername}:${process.env.dbPassword}@blog-1.zkv8i.mongodb.net/BLOG-1?authSource=admin&replicaSet=atlas-vroaam-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true`,{ useNewUrlParser: true,useUnifiedTopology: true , useFindAndModify: false },()=>{                                                                                
+    mongoose.connect('mongodb+srv://sadi:12345@blog-1.zkv8i.mongodb.net/BLOG-1?authSource=admin&replicaSet=atlas-vroaam-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true',{ useNewUrlParser: true,useUnifiedTopology: true , useFindAndModify: false },()=>{                                                                                
         console.log('moongooseEE')
 
     })
